@@ -1,0 +1,8 @@
+.customComboboxLabel{
+    --lwc-formLabelFontSize: 16px;
+    font-weight: bold;
+}
+
+.parentcontainer{
+    position: relative;
+}

@@ -1,0 +1,14 @@
+<!-- userGreeting.html -->
+<template>
+    <div class="container">
+        <div class="greeting">
+            Hi {userName}
+        </div>
+        <div class="profile-icon" onclick={toggleLogout}>
+            <lightning-avatar src={userProfilePicUrl} alternative-text="User Profile"></lightning-avatar>
+            <template if:true={showLogout}>
+                <lightning-button label="Logout" onclick={handleLogout}></lightning-button>
+            </template>
+        </div>
+    </div>
+</template>

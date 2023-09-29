@@ -1,0 +1,42 @@
+<template>
+    
+    <h1 class="header"><b>2. Supplier VAT Details</b></h1>
+<br>
+<br>
+    
+        <div class="form-container">
+            <!-- 1st Row -->   
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vatReg" class="form-label">2.1 Registered for VAT?*</label>
+                <select id="vatReg" class="form-select" required>
+                   <option value="Supplier 1 ">YES</option>
+                   <option value="Supplier 2">NO</option>
+               </select>
+             </div>
+
+             <div class="form-group">
+                <label for="vatregNumber" class="form-label">2.2 VAT Registration Number:</label>
+                <input type="number" id="vatregNumber" class="form-input" placeholder="Enter Registration No." />
+              </div>
+
+              <div class="form-group">
+                <label for="idNumber" class="form-label">2.3 Supplier ID Number:</label>
+                <input type="number" id="idNumber" class="form-input" placeholder="Enter Registration No." />
+              </div>
+            </div>
+                
+            
+    
+              <br>
+              <br>
+             <!-- <div class="button-container">
+              <button class="form-back">BACK</button>
+              <button class="form-submit">NEXT</button>
+            </div>-->
+            <div class="button-container">
+                <button class="form-button back-button">Back</button>
+                <button class="form-button next-button">Next</button>
+            </div>
+        </div>
+ </template>

@@ -1,0 +1,13 @@
+<template>
+    <div class="button-container">
+        <template lwc:if={displaybackbutton}>
+            <button class="form-button back-button" onclick={handleBack}>BACK</button>
+        </template>
+        <template lwc:if={displaynextbutton}>
+            <button class="form-button next-button" onclick={handleNext}>NEXT</button>
+        </template>
+        <template lwc:if={displaysubmitbutton}>
+            <button class="form-button submit-button" onclick={handleSubmit}>SUBMIT</button>
+        </template>
+    </div>
+</template>

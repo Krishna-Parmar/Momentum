@@ -1,0 +1,58 @@
+.button-container{
+
+    text-align: center;
+
+}
+
+ 
+
+.form-button {
+
+    color: #fff; /* White text */
+
+    border: none;
+
+    width: 150px;
+
+    height: 35px;
+
+    border-radius: 20px;
+   
+    cursor: pointer;
+
+    margin: 5px; /* Add some margin between the buttons */  
+
+    flex: 1; /* Equal width for both buttons */
+
+}
+
+ 
+
+.back-button {
+
+    background-color: #a19797; /* Gray background for "Back" */
+
+}
+
+ 
+
+.next-button {
+
+    background-color: #df2525; /* Red background for "Next" */
+ 
+
+}
+
+.custom-textarea {     /* Add padding, margins, and other styles as needed */    padding: 10px; } .gray-background {     background-color: #f0f0f0; /* Set the background color to gray */    border: 1px solid #ccc;   /* Add a border for better visibility */    width: 100%;              /* Make the textarea expand to the container's width */    height: 150px;            /* Set the desired height for the textarea */}
+
+.background{
+    background-color: #fff;
+}
+
+.radio-options{
+    accent-color: Red;
+}
+
+input[type=radio] {
+    margin: 15px;
+    }

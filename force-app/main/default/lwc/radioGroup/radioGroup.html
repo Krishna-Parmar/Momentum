@@ -1,0 +1,54 @@
+<template>
+   
+    <div class="custom-background">
+        <div class="filtericon">
+            <lightning-icon
+                icon-name="utility:filter"
+                size="small"
+                alternative-text="Filter"
+            ></lightning-icon>&nbsp;&nbsp;&nbsp;&nbsp;
+            <label class="bold-red-label">FILTERS</label>
+        </div><br>
+        <legend class="slds-form-element__legend slds-form-element__label">SUPPLIER STATUS</legend>
+            <div class="slds-form-element__control">
+		        <lightning-radio-group 
+                    options={options} 
+                    value={value} 
+                    type="radio">
+		        </lightning-radio-group>
+            </div>
+            <div class="slds-m-top_medium slds-m-bottom_x-large">
+        <legend class="slds-form-element__legend slds-form-element__label">COMMODITY TYPE</legend>
+            <!--<h2 class="slds-text-heading_small slds-m-bottom_medium">
+                <code>Commodity Type</code>
+            </h2>-->
+
+            <select name="commodity-names" id="commodity-names">
+                <option value="first">Menu Item One</option>
+                <option value="secound">Menu Item Two</option>
+                <option value="third">Menu Item Three</option>
+                <option value="fourth">Menu Item Four</option>
+            </select>
+    
+            <br>
+            <br>
+    
+            <!--<h2 class="slds-text-heading_small slds-m-bottom_medium">
+                <code>SUPPLIER TYPE</code>
+            </h2>-->
+            <legend class="slds-form-element__legend slds-form-element__label">SUPPLIER TYPE</legend>
+            <select name="supplier-names" id="supplier-names">
+                <option value="first">Menu Item One</option>
+                <option value="secound">Menu Item Two</option>
+                <option value="third">Menu Item Three</option>
+                <option value="fourth">Menu Item Four</option>
+            </select> 
+            </div>  
+            
+           <div>
+                <button class="form-submit"  onclick={handleClick}>APPLY FILTERS</button><br>
+                <button class="form-clear" onclick={handleClick}>CLEAR</button>
+           </div>
+
+    </div>
+</template>

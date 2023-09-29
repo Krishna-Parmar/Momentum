@@ -1,0 +1,131 @@
+:host {
+    --line-border-fill: #ee0909;
+    --line-border-empty: #b1b1b1e1;
+    font-family: "Muli", sans-serif;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .container {
+    text-align: center;
+    background: white;
+    padding: 10px;
+  }
+  
+  .progress-container {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 30px;
+    max-width: 100%;
+    width: 350px;
+  }
+  
+  .progress-container::before {
+    content: ""; /* Mandatory with ::before */
+    background-color: var(--line-border-empty);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 10px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .progress {
+    background-color: var(--line-border-fill);
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 5px;
+    width: 0%;
+    z-index: 1;
+    transition: 0.4s ease;
+  }
+  
+  .circle {
+    background-color: #fff;
+    color: #999;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    border: 5px solid var(--line-border-empty);
+    transition: 0.4s ease;
+    z-index: 2;
+  }
+
+.circle.active {
+
+    border-color: var(--line-border-fill);
+
+    background-color: #ee0909;
+
+  }
+
+
+.active .step-label {
+
+    color: red;
+
+}
+
+
+.active .step-icon {
+
+  --sds-c-icon-color-foreground-default: #ffffff;
+
+}
+  .btn {
+    background-color: var(--line-border-fill);
+    color: #fff;
+    border: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: inherit;
+    padding: 8px 30px;
+    margin: 5px;
+    font-size: 14px;
+  }
+  
+  .btn:active {
+    transform: scale(0.98);
+  }
+  
+  .btn:focus {
+    outline: 0;
+  }
+  
+  .btn:disabled {
+    background-color: var(--line-border-empty);
+    cursor: not-allowed;
+  }
+
+  .step-icon {
+    color: inherit;
+    font-size: 24px;
+    position: relative;
+  }
+
+.step-label {
+    color: inherit;
+    font-weight: bold;
+    width: 85px;
+    position: relative;
+    margin-top: 15px;
+    margin-left: -25px;
+  }
+
+  

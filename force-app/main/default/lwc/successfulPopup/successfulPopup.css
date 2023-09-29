@@ -1,0 +1,51 @@
+.slds-modal__close{
+
+    margin-top: 37px;
+    margin-right: 7px;
+   
+}
+.modal-heading-01{
+    font-weight: 700;
+   
+}
+
+.slds-modal__container{
+    width: 70px;
+
+    
+}
+
+/*.slds-modal {
+    
+    width: 700px; 
+    height: 500px; 
+}*/
+
+.form-Done {
+
+    background-color: #e0dddd; /* White background */
+            color: #0e0c0c; /* Black text */
+            border: none;
+            width: 100px;
+            height: 32px;
+           /* padding: 10px 20px;*/
+            cursor: pointer;
+            display: block; /* Block-level element for centering */
+            margin: 0 auto; /* Center horizontally */
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 96px;
+            float: left;
+}
+
+.p{
+    line-height: normal;
+}
+
+
+
+
+
+
+
+

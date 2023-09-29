@@ -1,0 +1,113 @@
+.header{
+    font-size: 30px;
+    color: rgb(33, 13, 105);
+}
+h1 {text-align: center;}
+
+.form-container {
+    width: 1000px;
+    height: 300px;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.customCombobox{
+    --lwc-formLabelFontSize: 16px;
+    font-weight: bold;
+    width: 75%;
+    --lwc-heightInput: 35px;
+    --slds-c-input-color-background: #f0f0f0;
+    --lwc-spacingXSmall:0px;
+	--lwc-spacingXxSmall:0px;
+	--lwc-spacingXxxSmall:0px;
+}
+
+
+.form-group {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.form-label {
+    font-size: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.form-input {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    height: 34px;
+}
+
+.form-select {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+}
+
+.form-submit {
+    background-color: #c52121; /* Red background */
+            color: #fff; /* White text */
+            border: none;
+            width: 110px;
+            height: 35px;
+           /* padding: 10px 20px;*/
+            cursor: pointer;
+            display: block; /* Block-level element for centering */
+            margin: 0 auto; /* Center horizontally */
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 400px;
+}
+
+.form-back{
+    background-color: #413c3c; /* Red background */
+            color: #fff; /* White text */
+            border: none;
+            width: 110px;
+            height: 35px;
+           /* padding: 10px 20px;*/
+           /* cursor: pointer;
+            display: block; /* Block-level element for centering */
+            /*margin: 0 auto;  /* Center horizontally */
+            text-align: center;
+            border-radius: 20px;
+            margin-left: 300px;
+}
+
+.button-container{
+    text-align: center;
+}
+
+.form-button {
+    color: #fff; /* White text */
+    border: none;
+    width: 110px;
+    height: 35px;
+    border-radius: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+    margin: 5px; /* Add some margin between the buttons */  
+    flex: 1; /* Equal width for both buttons */
+}
+
+.back-button {
+    background-color: #423e3e; /* Gray background for "Back" */
+}
+
+.next-button {
+    background-color: #df2525; /* Red background for "Next" */
+}
+

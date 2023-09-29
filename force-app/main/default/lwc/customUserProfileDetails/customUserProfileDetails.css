@@ -1,0 +1,22 @@
+/* userGreeting.css */
+.container {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    margin-left: 50px;
+}
+
+.greeting {
+    font-size: 18px;
+    margin-right: 10px;
+    color: white;
+}
+
+.profile-icon {
+    margin-right: 10px;
+}
+
+.logout {
+    margin-top: 5px;
+}
+    

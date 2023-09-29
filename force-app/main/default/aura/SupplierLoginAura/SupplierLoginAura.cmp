@@ -1,0 +1,20 @@
+<aura:component implements="forceCommunity:availableForAllPageTypes" access="global">
+    <lightning:card>
+        <lightning:layout multipleRows="true">
+            <lightning:layoutitem size="12" padding="around-small">
+                <lightning:input type="text" label="Username" aura:id="username" required="true">
+                </lightning:input>
+            </lightning:layoutitem>
+            <lightning:layoutitem size="12" padding="around-small">
+                <lightning:input type="text" label="Password" aura:id="password" required="true">
+                </lightning:input>
+            </lightning:layoutitem>
+            <lightning:layoutitem size="12" padding="around-small">
+                <div class="slds-align_absolute-center">
+                    <lightning:button label="login" variant="brand" onclick="{!c.onLogin}">
+                    </lightning:button>
+                </div>
+            </lightning:layoutitem>
+        </lightning:layout>
+    </lightning:card>
+</aura:component>	

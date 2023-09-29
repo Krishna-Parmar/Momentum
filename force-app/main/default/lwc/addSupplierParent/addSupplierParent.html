@@ -1,0 +1,11 @@
+<template>
+    <div class="parentcontainer">
+        <c-add-supplier-header onhandleheaderbtnclick={handleHeaderButtonClick}></c-add-supplier-header>
+        <!--<c-progress-indicator></c-progress-indicator>-->
+        <c-custom-progress-indicator-icon-comp></c-custom-progress-indicator-icon-comp>
+        <c-add-supplier-details-componen page-name={pageName} record-id={recordId}></c-add-supplier-details-componen>
+        <c-page-initiator2-buttons page-name={pageName} onhandlebtnclick={handleButtonClick}></c-page-initiator2-buttons>
+        <c-model-popup onyesbuttonclick={submitDetailsButtonClick}></c-model-popup>
+        <c-successful-popup onyesbuttonclick1={submitDetailsButtonClick1}></c-successful-popup>
+    </div>
+</template>

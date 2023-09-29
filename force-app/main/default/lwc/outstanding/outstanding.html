@@ -1,0 +1,33 @@
+<template> <div class =" background">
+    <div class="radio-options">
+   <h1> Would you like to approve the Supplier onbording request? </h1><label><br>
+    <input type="radio" name="option" value="approve"  oninput={handleOptionChange} />
+               Approve
+    </label><br>
+    <label>
+    <input type="radio" name="option" value="reject" oninput={handleOptionChange} />
+                Reject
+    </label><br>
+    <label>
+    <input type="radio" name="option" value="request" oninput={handleOptionChange} />
+                Request Connection
+    </label><br>
+    </div>
+   <!-- <div class="selected-option">
+            Selected Option: {selectedOption}
+    </div> -->
+ <Br><br>
+    <h1>Capture a reason for your selection:* </h1>
+ <div class="custom-textarea">        
+    <textarea class="gray-background" placeholder="Enter text here..."></textarea>   
+ </div>
+
+
+    <div class="button-container">
+        <button class="form-button next-button" onclick={VAThandleNEXTClick}>Save and Submit</button>
+        <button class="form-button back-button" onclick={VAThandleBACKClick}>Save as draft</button>
+ 
+
+    </div>
+</div>
+    </template>

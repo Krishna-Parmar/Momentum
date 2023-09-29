@@ -1,0 +1,44 @@
+<template> 
+
+    <div class =" background">
+    <div class="radio-options">
+   <h1><b> Would you like to approve the Supplier onbording request?</b> </h1><label><br>
+    <input type="radio" name="option" value="approve"  oninput={handleOptionChange} />
+               Approve
+    </label><br>
+    <label>
+    <input type="radio" name="option" value="reject" oninput={handleOptionChange} />
+                Reject
+    </label><br>
+    <label>
+    <input type="radio" name="option" value="request" oninput={handleOptionChange} />
+                Request Correction
+    </label><br>
+    </div>
+   <!-- <div class="selected-option">
+            Selected Option: {selectedOption}
+    </div> -->
+ <Br><br>
+    <h1><b>Capture a reason for your selection:* </b></h1>
+ <div class="custom-textarea">        
+ 
+    <lightning-textarea
+             
+            
+                value={textValue}
+                onchange={handleTextChange}
+          
+                >
+     </lightning-textarea>
+    
+ </div>
+
+
+    <div class="button-container">
+        <button class="form-button next-button" onclick={handleSaveSubmit}>Save and Submit</button>
+        <button class="form-button back-button" onclick={handleSaveDraft}>Save as draft</button>
+ 
+
+    </div>
+</div>
+    </template>

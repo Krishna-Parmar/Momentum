@@ -1,0 +1,59 @@
+<template>
+    
+    <h1 class="header"><b>3. Request Overview</b></h1>
+    <br>
+    <br>
+        
+            <div class="form-container">
+                <!-- 1st Row -->    
+                <div class="form-row">
+    
+                    <div class="form-group">
+                        <lightning-combobox class="label_styling customCombobox"
+                                        label="3.1 Request Type*"
+                                        value={ReqType}
+                                        placeholder="select option"
+                                        options={requtype}
+                                        onchange={RequestTypeChangeHandler}>
+                           
+                                       </lightning-combobox>
+                     </div>
+    
+                     <div class="form-group">
+                        <lightning-combobox class="label_styling customCombobox"
+                                        label="3.2 Commodity Type*"
+                                        value={CommodityType}
+                                        placeholder="select option"
+                                        options={commodType}
+                                        onchange={CommodityTypeChangeHandler}>
+                                       </lightning-combobox>
+                     </div>
+                </div>
+        
+                <!--2nd row-->
+                <div class="form-row">
+                    <div class="form-group">
+                        <lightning-combobox class="label_styling customCombobox"
+                                        label="3.3 Relevant Cost Centre*"
+                                        value={CostCentre}
+                                        placeholder="select option"
+                                        options={RelCost}
+                                        onchange={RelevantCostCentreChangeHandler}>           
+                                       </lightning-combobox>
+                        </div>
+    
+                    <div class="form-group">
+                        <label for="estimatedContractAmount" class="form-label">3.4 Estimated Contract Amount (ZAR)*</label>
+                        <input value={EstimateAmount} type="number" id="estimatedContractAmount" onchange={EstimatedContractAmountChangeHandler} class="form-input" placeholder="estimate amount" required />
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <!-- <div class="button-container">
+                    <button class="form-button back-button"  onclick={REQhandleBACKClick}>Back</button>
+                    <button class="form-button next-button"  onclick={REQhandleSubmitClick}>Submit</button>
+                </div> -->
+                <c-file-attachment-component record-id={recordId}></c-file-attachment-component>
+            </div>
+            <br>
+    </template>

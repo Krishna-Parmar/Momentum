@@ -1,0 +1,10 @@
+<template><div style="padding:3.5rem 1rem 0">
+    <div class="progress-indicator">
+        <template for:each={progressItems} for:item="item">
+            <div key={item.id} >
+                <div class="point-circle"></div>
+                <div class="point-heading">{item.heading}</div>
+            </div>
+        </template>
+    </div></div>
+</template>

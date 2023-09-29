@@ -1,0 +1,64 @@
+<template>
+    <div class="form-container">
+    <lightning-card title="Vendor Registration Details">
+        <div>
+            <lightning-record-view-form record-id={recordId} object-api-name={ObjApiname} layout-type="Full"
+                density="auto">
+
+                <div class="form-row custom-output-field">
+                    <div class="form-group ">
+                        <lightning-output-field field-name="Name"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Supplier_Email__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Select__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Holding_Company_Group_Name__c"></lightning-output-field>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <lightning-output-field field-name="Registered_Business_Name__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Company_Registration_Number__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Registered_for_VAT__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="VAT_Registration_Number__c"></lightning-output-field>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <lightning-output-field field-name="Supplier_ID_Number__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Request_Type__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Commodity_Type__c"></lightning-output-field>
+                    </div>
+                    <div class="form-group">
+                        <lightning-output-field field-name="Cost_Center__c"></lightning-output-field>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <lightning-output-field field-name="Estimated_Contract_Amount_ZAR__c"></lightning-output-field>
+                    </div>
+
+                    
+                </div>
+
+            </lightning-record-view-form>
+        </div>
+    </lightning-card>
+</div>
+</template>

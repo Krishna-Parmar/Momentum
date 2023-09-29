@@ -1,0 +1,36 @@
+.progress-indicator {
+     padding-left: 20%;
+     padding-right: 20%;
+    display: flex;
+    justify-content: space-between;
+    color: red; /* Red color for active point headings */
+}
+
+.progress-point {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333; /* Default color for inactive points */
+}
+
+.active .point-circle {
+    background-color: red; /* Red color for active points */
+}
+
+.point-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ccc; /* Default color for points */
+    margin-bottom: 8px;
+}
+
+.point-heading {
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.active .point-heading {
+    color: red; /* Red color for active point headings */
+}

@@ -1,0 +1,132 @@
+.my-container 
+{
+    background-color: #e2e0df; /* Replace with your desired background color code */
+    width: 100%; /* Set the width as needed */
+    height: 100vh; /* Set the height as needed */
+}
+.header {
+    background-color: #e2e0df; /* Header background color */
+    color: #fff; /* Text color */
+    padding: 10px; /* Add padding for spacing */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   }
+.name {
+    font-size: 30px; /* Adjust the font size as needed */
+    color: black;
+    font-weight: bold;
+}
+
+.search-bar {
+    width: 58%; /* Adjust the width as needed */
+    color:black;
+    float: right;
+    display: flex;
+    margin-top: 8px;
+    margin-left: 30px;
+    padding: 5px; /* Add padding for spacing */
+    border: none;
+    padding:10px;
+    padding-left: 10;
+    cursor: pointer;
+    border-radius: 20px;
+    font-size: 16px; /* Adjust the font size as needed */
+    align-items: center;
+    gap: 10px;
+}
+.black-line {
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 20px 0;
+    
+}
+.button {
+    background-color:red; 
+    width: 30%;    
+    margin-top: 8px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding:10px;
+    padding-left: 20;
+    padding-right: 20;
+    cursor: pointer;
+    border-radius:25px;
+    font-weight: bold;
+  }
+h2{
+    padding: 10px;
+    justify-content: space-between;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+h1{
+    padding: 10px;
+    justify-content: space-between;
+    color: black;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+input[type="search"] {
+  border: none;
+  flex: 1;
+  margin-top: 8px;
+  outline: none;
+  width: 70%;
+  padding:10px;
+  padding-left: 20;
+  padding-right: 20;
+  font-size: 16px;
+  border-radius:25px;
+  text-align: center;
+}
+
+lightning-icon {
+  color: #777;
+  margin-left: 0px;
+  cursor: pointer;
+}
+
+.test
+{
+    background-color: white; /* Replace with your desired background color code */
+    width: 100%; /* Set the width as needed */
+    height: 50vh; /* Set the height as needed */
+}
+.button1 {
+     
+    width: 20%;    
+    margin-top: 8px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    padding:10px;
+    padding-left: 10;
+    padding-right: 10;
+    cursor: pointer;
+    border-radius:5px;
+    font-weight: bold;
+  }  
+  .view{
+    background-color:rgb(0, 0, 33) ;
+    margin: 28px;
+  }
+  .req{
+    background-color:red ;
+  }
+
+  .custombox{
+    margin-bottom: 5px;
+    border-radius: 10px;
+  }

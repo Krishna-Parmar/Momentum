@@ -1,0 +1,55 @@
+<template>
+    
+    <div class="my-container">
+
+        <div class="header">
+            <div class="name">Vendor Management</div>
+            <div class="search-bar slds-input-has-icon slds-input-has-icon_left">
+                <lightning-icon size="small" class="slds-icon slds-input__icon slds-input__icon_left slds-icon-text-default" icon-name="utility:search"></lightning-icon>
+              <input type="search" placeholder="Company name, tax or company number" class="slds-input"  onchange={handelSearchKey}>
+              <button class="button" onclick={handleAddSupplier}> + ADD SUPPLIER</button>
+            </div>          
+        </div>
+        
+        <h2 class="head2">Search Result : {count}</h2>
+        <hr class="black-line">
+      
+        <template if:false={shouldDisplayData}>
+        <div >
+            <h1> No results match your search</h1>
+            <br>
+            We couldn't find anything to match your search. Please <b>check your spelling and/or filters</b> or alternatively<b> add a new vendor above </b>
+        </div>       
+        </template>
+
+
+        <template if:true={shouldDisplayData}>              
+            
+              <template for:each={tabledata} for:item="data">
+                <div key={data.Id} class="box custombox" >
+                <lightning-card>
+                <lightning-record-view-form  object-api-name="Supplier__c"  record-id={data.Id}>
+                     <div class="slds-grid">
+                    <div class="slds-col slds-size_2-of-4">
+                <strong><lightning-output-field field-name="Name"> </lightning-output-field></strong>
+                <strong><lightning-output-field field-name="Supplier_Email__c"> </lightning-output-field></strong>
+                    </div>
+                    <div class="slds-col slds-size_3-of-4">
+                    <strong><lightning-output-field field-name="Registered_Business_Name__c"> </lightning-output-field></strong>
+                    <strong><lightning-output-field field-name="Holding_Company_Group_Name__c"> </lightning-output-field></strong>
+                </div>                                
+                </div>
+                </lightning-record-view-form>
+                 
+                <button class="button1 view" onclick={handleViewSupplierDetails} btnrecordid={data.Id}> View Supplier Details</button>
+                <button class="button1 req"> Request Re-activation</button>
+                <template lwc:if={data.showRequestCorrectionButton}>
+                <button  class="button1 view" onclick={handleRequestCorrection} btnrecordid={data.Id}>Request Correction</button>
+            </template>
+            </lightning-card>                      
+                </div>
+            </template>        
+
+        </template>  
+</div>
+  </template>

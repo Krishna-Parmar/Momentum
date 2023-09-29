@@ -1,0 +1,42 @@
+<template>
+    
+  <h1 class="header"><b>2. Supplier VAT Details</b></h1>
+  <br>
+  <br>
+      
+          <div class="form-container">
+              <!-- 1st Row -->   
+              <div class="form-row">
+                <div class="form-group">
+                  <lightning-combobox class="label_styling customCombobox"
+                                 label="2.1 Registered for VAT?*"
+                                 value={IsRegistered}
+                                 placeholder="select option"
+                                 options={isRegVat}
+                                 onchange={IsRegisteredVATChangeHandler}>            
+                    </lightning-combobox> 
+               </div>
+  
+               <div class="form-group">
+                  <label for="vatregNumber" class="form-label">2.2 VAT Registration Number:*</label>
+                  <input value={VATRegNum} type="number" id="vatregNumber" class="form-input" onchange={VATRegNumberChangeHandler} placeholder="Enter Registration No." required />
+                </div>
+  
+                <div class="form-group">
+                  <label for="supplierIDNum" class="form-label">2.3 Supplier ID Number:</label>
+                  <input value={SupplierIDNum} type="number" id="supplierIDNum" class="form-input" onchange={SupplierIDNumberChangeHandler} placeholder="Enter Supplier ID No."/>
+                </div>
+              </div>
+                  
+              
+      
+                <br>
+                <br>
+               
+              <!-- <div class="button-container">
+                  <button class="form-button back-button" onclick={VAThandleBACKClick}>Back</button>
+                  <button class="form-button next-button" onclick={VAThandleNEXTClick}>Next</button>
+              </div> -->
+          </div>
+
+ </template>

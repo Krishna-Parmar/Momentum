@@ -1,0 +1,27 @@
+<template>
+    <div class="container">
+        <!--div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <div class="circle active"></div>
+            <div class="circle">2</div>
+            <div class="circle">3</div>
+        </div-->
+
+        <div class="progress-container">
+            <div class="progress" id="progress"></div>
+            <template for:each={stepsWithClasses} for:item="step" for:index="index">
+                <div key={step.name} class={step.className}> 
+                    <div class="step-icon">
+                        <lightning-icon icon-name={step.iconName} alternative-text={step.name} size="small"></lightning-icon>
+                    </div>  
+                    <div key={step.name} class="step-label">{step.name}</div>                  
+                </div>
+                
+            </template>
+        </div>
+        <!--
+        <button class="btn" id="prev" onclick={handleBack}>Prev</button>
+        <button class="btn" id="next" onclick={handleNext}>Next</button>
+        -->
+    </div>
+</template>

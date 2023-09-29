@@ -1,0 +1,63 @@
+:host{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #d8dde6;
+    width: 100%;
+    height: 100px;
+    border: solid 1px black;
+}
+
+.header{
+    margin-top: 12px;
+    font-weight: bolder;
+    font-size: 30px;
+    float:left;
+    padding: 2px;
+    margin: 13px;  
+}
+.button{
+    width: 10%;
+    margin-top: 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: capitalize;
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25px;
+    float: right;
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+
+.save{
+    background-color: white;
+    color: black;
+    border: none;
+
+}
+
+.submit{
+    background-color: red;
+    color: white;
+    border: black;
+
+}
+
+.text{
+    background-color: white;
+    font-weight: 600;
+    font-size: 15px;
+    float:left;
+    padding: 7px;
+    margin: 16px;
+    margin-top: 57px;
+    margin-left: -285px ;
+}

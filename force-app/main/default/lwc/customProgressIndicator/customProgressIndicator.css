@@ -1,0 +1,55 @@
+/* progressIndicator.css */
+.active-step {
+    background-color: #0070d2; /* Active step color */
+    color: #ffffff; /* Text color for active step */
+}
+
+.completed-step {
+    background-color: #4caf50; /* Completed step color */
+    color: #ffffff; /* Text color for completed step */
+}
+
+.inactive-step {
+    background-color: #f2f2f2; /* Inactive step color */
+    color: #000000; /* Text color for inactive step */
+}
+
+.completed-path {
+    background-color: #ff0000; /* Red path color for completed steps */
+}
+
+.incomplete-path {
+    background-color: #d9d9d9; /* Grey path color for incomplete steps */
+}
+
+.progress-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    overflow: hidden;
+    padding: 0.2rem;
+}
+
+.progress-indicator > div {
+    flex-grow: 1;
+    text-align: center;
+    padding: 0.5rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.step-icon img {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+}
+
+.step-label {
+    font-weight: bold;
+}
+
+.container{
+    background-color: white;
+    width: 50px;
+}

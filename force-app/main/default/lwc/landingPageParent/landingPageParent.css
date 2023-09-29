@@ -1,0 +1,14 @@
+.backgroundImg{
+    height:720px;
+    background-position: center;
+    background-size: cover;
+}
+.customParentBlock{
+    background-color: white;
+    padding:12px;
+    width: 25%;
+    display: block;
+    position: absolute;
+    top: 17%;
+    left: 59%;
+}
